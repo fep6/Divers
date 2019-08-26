@@ -6,4 +6,5 @@
  *
  */
 module Divers {
+	requires java.desktop;
 }
