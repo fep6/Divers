@@ -1,6 +1,5 @@
-package fr.KOOR.swing;
+package fr.KOOR.ASwing_gestionFenetre;
 
-import java.awt.Dimension;
 import java.awt.FlowLayout;
 
 import javax.swing.JButton;
@@ -11,18 +10,13 @@ import javax.swing.JTextField;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.plaf.nimbus.NimbusLookAndFeel;
-/**
- * 
- * setPreferredSize(x,y);
- * Ajout constantes pour FlowLayout
- *
- */
-public class MyWindow2FlowLayout_Responsive2 extends JFrame{
+
+public class MyWindow2FlowLayout_Responsive1 extends JFrame{
 	
 	private static final long serialVersionUID = -6906441042070858585L;
 
 
-	public MyWindow2FlowLayout_Responsive2() {
+	public MyWindow2FlowLayout_Responsive1() {
 
 		super( "Ma nouvelle application Swing" );
 		//Pour terminerl'application (à la fermeture de la fenêtre)
@@ -35,23 +29,18 @@ public class MyWindow2FlowLayout_Responsive2 extends JFrame{
 		
 		//permet d'avoir le contenu principal de la fenêtre (au delà du bandeau supérieur et de la barre de menu)
 		JPanel contentPane = (JPanel) this.getContentPane();
-		
-		// Paramètres 100 & 300 donnent un espace par défaut entre chaque élément
-		contentPane.setLayout(new FlowLayout(FlowLayout.RIGHT,20,2));
-
+		//
+		//
+		contentPane.setLayout(new FlowLayout());
 		// Création des éléments
+		
 		JButton btnPushMe = new JButton ("Push me!");
-		btnPushMe.setPreferredSize(new Dimension (120,20));
-		
+		//btnPushMe.setBounds(200,20,160,30); ne fonctionne pas
+
 		JButton btnClickMe = new JButton ("Click me!");
-		btnClickMe.setPreferredSize(new Dimension (120,20));
-		
 		JCheckBox chkCheckMe = new JCheckBox("Check me!!!!!!!!!!");
-		chkCheckMe.setPreferredSize(new Dimension (120,20));
-		
 		JTextField textEditMe = new JTextField("Edit me!");
-		textEditMe.setPreferredSize(new Dimension (120,20));
-		
+
 		//Affichage boutons
 		contentPane.add(btnPushMe);
 		contentPane.add(btnClickMe);
@@ -66,7 +55,7 @@ public class MyWindow2FlowLayout_Responsive2 extends JFrame{
 		UIManager.setLookAndFeel(new NimbusLookAndFeel());
 		
 		//Début de la création de fenêtre
-		MyWindow2FlowLayout_Responsive2 myWindow = new MyWindow2FlowLayout_Responsive2();
+		MyWindow2FlowLayout_Responsive1 myWindow = new MyWindow2FlowLayout_Responsive1();
 		myWindow.setVisible(true);
 	}
 

@@ -1,4 +1,4 @@
-package fr.KOOR.swing;
+package fr.KOOR.ASwing_gestionFenetre;
 
 import javax.swing.JButton;
 import javax.swing.JCheckBox;

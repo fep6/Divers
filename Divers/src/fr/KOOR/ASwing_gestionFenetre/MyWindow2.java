@@ -1,4 +1,4 @@
-package fr.KOOR.swing;
+package fr.KOOR.ASwing_gestionFenetre;
 
 import java.awt.EventQueue;
 import java.awt.FlowLayout;
