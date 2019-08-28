@@ -1,4 +1,4 @@
-package fr.KOOR.ASwing_gestionFenetre;
+package fr.KOOR.N.A.Swing_gestionFenetre;
 
 // https://www.youtube.com/watch?v=-UvxwleNA20&t=221s
 import java.awt.BorderLayout;

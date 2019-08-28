@@ -1,4 +1,4 @@
-package fr.KOOR.ASwing_gestionFenetre;
+package fr.KOOR.N.B.Swing_gestionEcouteurs;
 
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -42,6 +42,8 @@ public class MyWindow2FlowLayout_Responsive2 extends JFrame{
 		// Création des éléments
 		JButton btnPushMe = new JButton ("Push me!");
 		btnPushMe.setPreferredSize(new Dimension (120,30));
+		
+		
 		
 		JButton btnClickMe = new JButton ("Click me!");
 		btnClickMe.setPreferredSize(new Dimension (120,30));
